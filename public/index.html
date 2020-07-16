@@ -1,0 +1,51 @@
+<html>
+    <head>
+       
+        <link rel=stylesheet href="/css/style.css">
+         <header><h1>CALCULATORE</h1></header>
+<TITLE>Calculator</TITLE>
+
+<script >
+    var inputstring = "";
+     function calculate(value)
+     {
+ inputstring+=value; 
+ document.calculator.input.value=inputstring;
+
+     }
+</script>
+</head>
+    <body>
+
+<Form name="calculator"> 
+
+        <table id="table" > 
+<div class="main">
+   <Input type="text" name="input" id="txt" >
+       <tr> <td> <input type="reset" value="C"onclick="input.value=''; inputstring=''"/></td>
+            <td><Input type="button" value="%" onclick="calculate('%') "/></td>
+  <td><Input type="button" value="*" onclick="calculate('*')"/></td>
+     <td><Input type="button" value="π" onclick="calculate('3.14')"/></td>
+     <td> <Input type="button"value="+" onclick="calculate('+')"/><br></td></tr>
+    <tr><td><input type="button" value="7" onclick="calculate('7')"/> </td>
+    <td><input type="button" value="8" onclick="calculate('8')"/> </td>
+      <td><Input type = "button" value="9" onclick="calculate('9')"/></td> 
+     <td><Input type = "button" value="4" onclick= "calculate('4' )"/></td> 
+    <td> <Input type = "button" value="/" onclick="calculate('/')"/><br></td></tr>
+    <tr><td> <Input type="button" value="5" onclick="calculate('5')"/> </td>
+  <td> <Input type = "button" value="6" onclick= "calculate('6' )"/></td>
+    <td><Input type = "button" value="1" onclick="calculate('1')"/></td>
+    <td><Input type = "button" value="2" onclick="calculate('2')"/></td>
+        <td> <input type="button" value="-" onclick="calculate('-')"/><br></td></tr>
+        <tr>  <td>    <input type = "button" value="3" onclick="calculate('3')"/></td>
+       <td> <Input type="button"value="0" onclick="calculate('0')"/></td>
+    <td><Input type = "button" value="00" onclick= "calculate('00' )"/></td>
+        <td> <Input type="button"value="." onclick="calculate('.')"/></td>
+        <td><input type="button" value="=" id="sum" onclick="input.value=eval(inputstring);"/></td></tr>
+       </div>
+
+            </tr> </td> 
+        </Table> </Form> 
+<footer><p>------------------------------</p></footer>
+    </body>
+</html>
