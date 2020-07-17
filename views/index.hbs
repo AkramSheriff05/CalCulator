@@ -2,8 +2,13 @@
     <head>
        
         <link rel=stylesheet href="/css/style.css">
-         <header><h1>CALCULATORE</h1></header>
+        <link rel=icon href="/img/calc.png">
+         <header><h1>{{title}}</h1>
+         <a href="/">Home</a>
+<a href="/about">About</a>
+</header>
 <TITLE>Calculator</TITLE>
+ 
 
 <script >
     var inputstring = "";
@@ -42,10 +47,11 @@
     <td><Input type = "button" value="00" onclick= "calculate('00' )"/></td>
         <td> <Input type="button"value="." onclick="calculate('.')"/></td>
         <td><input type="button" value="=" id="sum" onclick="input.value=eval(inputstring);"/></td></tr>
-       </div>
+      
 
             </tr> </td> 
         </Table> </Form> 
-<footer><p>------------------------------</p></footer>
-    </body>
+
+    </div>
+     <footer>{{credits}}</footer>   </body>
 </html>
