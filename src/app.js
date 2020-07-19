@@ -4,6 +4,7 @@ const path=require('path')
 const express=require('express')
 
 const app=express()
+const port=process.env.PORT||8080
 // path set pana html file ku
 const pathway=path.join(__dirname,'../public')
 
