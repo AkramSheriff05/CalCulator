@@ -4,11 +4,11 @@ const path=require('path')
 const express=require('express')
 
 const app=express()
-const port=process.env.PORT||8080
+const host=process.env.PORT||8080
 // path set pana html file ku
 const pathway=path.join(__dirname,'../public')
 
-const port=process.env.PORT||8080
+
 
 // hbs concept set pana
 app.set('view engine','hbs')
@@ -31,6 +31,6 @@ app.get('/about',(req,res)=>{
 
 
 
-app.listen(port,()=>{
+app.listen(host,()=>{
     console.log("server is up 8080")
 })
